@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -----navigation bar--------- */
+
+header {
+    width: 80%;
+    /* border: 1px solid salmon; */
+    margin-top: 50px;
+    margin-bottom: 140px;
+    /* display: flex;
+    align-items: center; */
+}
+
+nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+nav ul {
+    padding-left: 0px;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+ul>li {
+    display: flex;
+    list-style: none;
+}
+
+ul li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------intro---------- */
+
+.container {
+    display: flex;
+    /* border: 1px solid salmon; */
+    width: 80%;
+    /* border: solid pink; */
+    margin-bottom: 150px;
+}
+
+.sponsor {
+    border-top: 0.5px solid #AAAAAA;
+    border-bottom: 0.5px solid #AAAAAA;
+}
+
+.sponsor img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+
+}
+
+.intro {
+    margin-right: 120px;
+}
+
+.intro-head {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.intro-info {
+    margin-top: 0px;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.intro-photo {
+    width: 100%;
+}
+
+.button {
+    margin-top: 0px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    border-radius: 41px;
+    color: white;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    padding-left: 5px;
+    padding-top: 5px;
+
+}
+
+.top-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection-intro {
+    color: #3A3A3A;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* ---------products--------- */
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.collection {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.collection-photo {
+    margin-bottom: 30px;
+}
+
+.collection-name {
+    margin-bottom: 6px;
+}
+
+.collection-name h3 {
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+.price {
+    margin-top: 6px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: lighter;
+    margin-bottom: 6px;
+}
+
+.collection-rating {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: gold;
+}
+
+.collection-rating p {
+    margin-left: 5px;
+}
+
+.collection-info {
+    padding-bottom: 15px;
+}
+
+.collection-info p {
+    font-size: 12px;
+
+}
+
+.more-collections {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.see-more {
+    color: #E02C6D;
+    font-size: 12px;
+    text-align: right;
+
+}
+
+/* ------bottom------- */
+.bottom-head {
+    font-size: 30px;
+}
+
+.bottom-photo {
+    margin-right: 100px;
+}
+
+.bottom-text {
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+/* ----footer-----
+ */
+footer {
+    width: 100%;
+    background-color: #0A0826;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+footer h4 {
+    padding-top: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.footer-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social {
+    margin-right: 10px;
+}
+
+
+/* --------for smart phone----- */
+@media screen and (max-width:668px) {
+    body {
+        width: 100%;
+
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .container,
+    .collections {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+
+    .intro-head,
+    .intro-info,
+    .bottom-content {
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
